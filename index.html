@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Caffeine Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Caffeine Tracker</h1>
+    <div class="tracker">
+      <div class="controls">
+        <button id="espresso">Espresso (60 mg)</button>
+        <button id="americano">Americano (150 mg)</button>
+        <button id="cappuccino">Cappuccino (80 mg)</button>
+        <button id="reset" class="reset">RESET</button>
+      </div>
+      <div class="status">
+        <div class="total">Total: <span id="total">0</span> mg</div>
+        <div class="limit">Daily limit: 400 mg</div>
+        <div class="progress-wrap" aria-hidden="true">
+          <div id="progress" class="progress"></div>
+        </div>
+        <div id="message" class="message" role="status" aria-live="polite"></div>
+      </div>
+      <div class="history">
+        <h2>History</h2>
+        <ul id="historyList"></ul>
+      </div>
+    </div>
+    <footer><small>Click a drink to log it. Progress shows proximity to 400 mg.</small></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
